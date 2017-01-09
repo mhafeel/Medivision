@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:id="@+id/lvstart"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:background="#0ab3aa"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/lvlang"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvstart"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"
+        android:gravity="end">
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="CHANGE LANGUAGE  "
+            android:textColor="#0ab3aa"
+            android:textSize="7pt" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/group"
+
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rllang"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvlang"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+
+        >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/english"
+            android:background="#0ab3aa" />
+
+        <LinearLayout
+            android:id="@+id/english"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="English  "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/malayalam"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/english"
+            android:layout_gravity="end"
+
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="മലയാളം  "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/logo" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp">
+
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/headerbg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:text="Share result with Medivision"
+            android:textColor="#fff"
+            android:textSize="8pt" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/quesrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/borderrect"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/provide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-light"
+            android:padding="5dp"
+            android:text="PLEASE PROVIDE YOUR INFORMATIONS."
+            android:textSize="9pt" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/provide"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="40dp"
+           android:id="@+id/lvname"
+
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:hint="name"
+                android:theme="@style/EditTextTheme"
+android:inputType="textPersonName"
+                android:textColor="#0ab3aa"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lvname"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lvemail"
+
+
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:hint="sample@gmail.com"
+                android:theme="@style/EditTextTheme"
+                android:textColor="#0ab3aa"
+                android:inputType="textEmailAddress"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lvemail"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lvphone"
+
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:inputType="phone"
+                android:hint="phone number"
+                android:theme="@style/EditTextTheme"
+                android:textColor="#0ab3aa"
+                android:gravity="center"/>
+        </LinearLayout>
+
+       
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lvphone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/curveborderblack"
+            android:text="Next"
+            android:textAllCaps="false"
+
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="9pt" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

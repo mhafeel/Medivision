@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bgpattern">
+
+
+    <LinearLayout
+        android:id="@+id/lvstart"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:background="#0ab3aa"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="55dp"
+        android:id="@+id/restart"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESTART"
+            android:textColor="#0ab3aa"
+            android:textSize="7pt"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lvlang"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvstart"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="CHANGE LANGUAGE  "
+            android:textColor="#0ab3aa"
+            android:textSize="7pt" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/group"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rllang"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvlang"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+
+        >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/english"
+            android:background="#0ab3aa" />
+
+        <LinearLayout
+            android:id="@+id/english"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="English  "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/malayalam"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/english"
+            android:layout_gravity="end"
+
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="മലയാളം  "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/logo" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp">
+
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/headerbg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:text="PROVIDE YOUR INFORMATIONS"
+            android:textColor="#fff"
+            android:textSize="8pt" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/quesrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/borderrect"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/firstlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:padding="20dp"
+                android:text="Please enter your name"
+
+                android:textSize="10pt" />
+
+            <LinearLayout
+                android:id="@+id/lvname"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/curveborder"
+                android:gravity="center"
+
+                >
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:textColor="#0ab3aa" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/firstlayout"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:background="#9ba5ad" />
+
+        <RelativeLayout
+            android:id="@+id/secondlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstlayout"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:padding="20dp"
+                android:text="Please enter your email"
+
+                android:textSize="10pt" />
+
+            <LinearLayout
+                android:id="@+id/lvemail"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/curveborder"
+                android:gravity="center"
+
+                >
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+
+                    android:textColor="#0ab3aa" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewsecond"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/secondlayout"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:background="#9ba5ad" />
+
+        <RelativeLayout
+            android:id="@+id/thirdlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondlayout"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:padding="20dp"
+                android:text="Please enter your phone number"
+
+                android:textSize="10pt" />
+
+            <LinearLayout
+                android:id="@+id/lvphone"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/curveborder"
+                android:gravity="center"
+
+                >
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textColor="#0ab3aa" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quesrl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/curveborderblack"
+        android:text="Next"
+        android:textColor="#fff"
+        android:textSize="10pt" />
+</RelativeLayout>

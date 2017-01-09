@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+
+        android:background="#0ab3aa" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/RLChangeLang"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE LANGUAGE"
+            android:id="@+id/changelangBmi"
+            android:textColor="#0ab3aa"
+            android:layout_gravity="right|center"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/group"
+            android:layout_marginRight="12dp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/changelang_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/RLChangeLang"
+        android:visibility="invisible"
+
+        >
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:background="@color/green"
+            android:layout_toRightOf="@+id/englishL1"/>
+
+        <LinearLayout
+            android:id="@+id/englishL1"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="English "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/malayalamL1"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/englishL1"
+            android:layout_gravity="end"
+            android:layout_marginRight="50dp"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="മലയാളം "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headerbg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardiac Risk Calculator"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/borderrect"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textSize="9pt"
+                android:id="@+id/TVbmiWeight"
+                android:text="Please enter your weight in kgs"/>
+            <LinearLayout
+
+                android:layout_marginRight="5dp"
+                android:layout_height="60dp"
+                android:background="@drawable/curveborder"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:layout_gravity="center"
+                   android:layout_marginRight="5dp"
+                   android:textSize="9pt"
+                   android:textColor="#9ba5ad"
+                   android:backgroundTint="@color/white"
+                   android:background="@null"
+                   android:layout_marginLeft="20dp"
+                   android:inputType="numberDecimal"
+                   android:id="@+id/ETbmiWeight"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#9ba5ad" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+            <LinearLayout
+                android:id="@+id/layoutCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TVbmiHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textSize="9pt"
+                    android:layout_gravity="center"
+                    android:text="Please enter your height in cms "
+                    android:textColor="@color/text_color" />
+
+                <LinearLayout
+
+                    android:layout_marginRight="5dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/curveborder"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ETbmiHeight"
+                        android:background="@null"
+                        android:textColor="#9ba5ad"
+                         android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:inputType="numberDecimal"
+
+                        android:textSize="9pt"
+
+                       />
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="12dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+
+        android:padding="30dp"
+        android:gravity="bottom|center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button__backBmi"
+            android:textSize="9pt"
+            android:text="Back"
+
+            android:background="@drawable/borderbutton"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="9pt"
+            android:textAllCaps="false"
+            android:text="Next"
+            android:id="@+id/button_nextBmi"
+            android:background="@drawable/borderrightbutton"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

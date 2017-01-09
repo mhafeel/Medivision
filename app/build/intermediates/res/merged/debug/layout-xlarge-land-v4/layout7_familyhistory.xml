@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+
+        android:background="#0ab3aa" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"
+            android:id="@+id/restart"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restart"
+                android:textColor="#0ab3aa"
+                android:textSize="7pt"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/RLChangeLang"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE LANGUAGE"
+            android:id="@+id/changelangFamily"
+            android:textColor="#0ab3aa"
+            android:layout_gravity="right|center"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group"
+            android:layout_marginRight="12dp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/changelang_layoutfamily"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="55dp"
+        android:layout_alignParentRight="true"
+
+        android:visibility="invisible"
+
+        >
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:background="@color/green"
+            android:layout_toRightOf="@+id/englishL1F"/>
+
+        <LinearLayout
+            android:id="@+id/englishL1F"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="English "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/malayalamF"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/englishL1F"
+            android:layout_gravity="end"
+            android:layout_marginRight="50dp"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="മലയാളം "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/malayalamL1age"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headerbg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Cardiac Risk Calculator"
+            android:textColor="#ffffff"
+            android:textSize="7pt"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:background="@drawable/borderrect"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/Textview_family"
+                android:layout_marginLeft="10dp"
+                android:textSize="10pt"
+                android:text=" Have either of your parents had a heart attack"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".23"
+                android:textSize="10pt"
+                android:text="Yes"
+
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/button_Fyes"
+                android:textColor="@color/text_color"
+                android:background="@drawable/curveborder"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".23"
+                android:textSize="10pt"
+                android:textColor="@color/text_color"
+                android:textAllCaps="false"
+                android:text="No"
+                android:id="@+id/button_Fno"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/curveborder"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="12dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+
+        android:padding="30dp"
+        android:gravity="bottom|center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/button__backF"
+            android:textSize="10pt"
+            android:text="Back"
+            android:textColor="@color/text_color"
+            android:background="@drawable/borderbutton"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:textColor="#ffffff"
+            android:textSize="10pt"
+            android:textAllCaps="false"
+            android:text="Next"
+            android:id="@+id/button_nextF"
+            android:background="@drawable/borderrightbutton"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

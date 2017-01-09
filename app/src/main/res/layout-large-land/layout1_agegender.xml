@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+
+        android:background="#0ab3aa" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+android:id="@+id/lll"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/RLChangeLang"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE LANGUAGE"
+            android:id="@+id/changelangAge"
+            android:textColor="#0ab3aa"
+            android:layout_gravity="right|center"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group"
+            android:layout_marginRight="12dp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/changelang_layoutage"
+android:gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lll"
+        android:visibility="invisible"
+
+        >
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:background="@color/green"
+            android:layout_toRightOf="@+id/englishL1age"/>
+
+        <LinearLayout
+            android:id="@+id/englishL1age"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="English "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/malayalamL1age"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/englishL1age"
+            android:layout_gravity="end"
+            android:layout_marginRight="50dp"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="മലയാളം "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/malayalamL1age"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headerbg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardiac Risk Calculator"
+            android:textColor="#ffffff"
+            android:textSize="7pt"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@drawable/borderrect"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/Textview_gender"
+                android:layout_marginLeft="10dp"
+                android:textSize="9pt"
+                android:text="Select your gender"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".23"
+                android:textSize="9pt"
+                android:text="Male"
+
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/button_male"
+                android:textColor="@color/text_color"
+                android:background="@drawable/curveborder"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".23"
+                android:textSize="9pt"
+                android:textColor="@color/text_color"
+                android:textAllCaps="false"
+                android:text="Female"
+                android:id="@+id/button_female"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/curveborder"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#9ba5ad" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+            <LinearLayout
+                android:id="@+id/layoutCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextView_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textSize="9pt"
+                    android:layout_gravity="center"
+                    android:text="Select your age"
+                    android:textColor="@color/text_color" />
+
+                <LinearLayout
+
+                    android:layout_marginRight="5dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/curveborder"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerAge"
+                        style="@style/Base.Widget.AppCompat.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:textSize="18sp"
+                        android:inputType="text"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:textColor="@color/black"
+
+                        />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="12dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+
+        android:padding="40dp"
+        android:gravity="bottom|center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button__backl1"
+            android:textSize="9pt"
+            android:text="Back"
+            android:textColor="@color/text_color"
+            android:background="@drawable/borderbutton"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="9pt"
+            android:textAllCaps="false"
+             android:text="Next"
+            android:id="@+id/button_nextl1"
+            android:background="@drawable/borderrightbutton"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

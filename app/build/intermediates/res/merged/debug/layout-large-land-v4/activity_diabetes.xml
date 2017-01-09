@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:id="@+id/lvstart"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:background="#0ab3aa"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/lvlang"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvstart"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="CHANGE LANGUAGE  "
+            android:textColor="#0ab3aa"
+            android:textSize="7pt" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/group"
+
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rllang"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvlang"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+
+        >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/english"
+            android:background="#0ab3aa" />
+
+        <LinearLayout
+            android:id="@+id/english"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="English  "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/malayalam"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/english"
+            android:layout_gravity="end"
+
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="മലയാളം  "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/logo" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp">
+
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/headerbg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="Cardiac Risk Calculator"
+            android:textColor="#fff"
+            android:textSize="8pt" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/quesrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/frame"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        android:background="@drawable/borderrect"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/firstlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+           >
+
+            <LinearLayout
+                android:id="@+id/systolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are you suffering from diabetes?"
+                    android:textSize="9pt" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:layout_below="@+id/buttonlayout"
+                android:background="@drawable/curveborder">
+                <Spinner
+                    android:id="@+id/spinnerdiabetes"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:entries="@array/diabetes"
+                    android:paddingLeft="10dp"
+
+                    android:popupBackground="#ffff"
+                    android:spinnerMode="dropdown"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/firstlayout"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="25dp"
+            android:background="#9ba5ad"
+
+           />
+
+
+        <RelativeLayout
+            android:id="@+id/secondlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="30dp"
+
+           >
+
+            <LinearLayout
+                android:id="@+id/diastolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please enter your most recent HbA1c value :"
+                    android:textSize="9pt" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:layout_below="@+id/buttonlayout2"
+                android:background="@drawable/curveborder">
+                <Spinner
+                    android:id="@+id/spinnerHbA1c"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:paddingLeft="10dp"
+                    android:popupBackground="#ffff"
+                    android:spinnerMode="dropdown"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:textSize="9pt"
+            android:text="Back"
+            android:textColor="@color/text_color"
+            android:background="@drawable/borderbutton"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="9pt"
+            android:textAllCaps="false"
+            android:text="Next"
+            android:id="@+id/next"
+            android:background="@drawable/borderrightbutton"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

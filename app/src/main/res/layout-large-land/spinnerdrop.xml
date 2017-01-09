@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="style/Widget.TextView.SpinnerItem"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:textSize="9pt"
+    android:textColor="#6f6f6f"
+android:layout_height="wrap_content"
+    android:lineSpacingExtra="10dp"
+    android:ellipsize="marquee"
+android:background="#fff"
+    android:padding="5dp"
+
+
+    />
+

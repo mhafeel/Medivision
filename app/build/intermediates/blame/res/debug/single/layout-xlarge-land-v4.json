@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/layout7_familyhistory.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/layout7_familyhistory.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_sharewith.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/activity_sharewith.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/layout2checkbox.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/layout2checkbox.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_finalrisk.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/activity_finalrisk.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/layout6_sync.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/layout6_sync.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_diabetes.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/activity_diabetes.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_bloodpressure.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/activity_bloodpressure.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/layout3_cholestrol.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/layout3_cholestrol.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/layout1_agegender.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/layout1_agegender.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/layout4_bmi.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/layout4_bmi.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/list_row.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/list_row.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_start.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/activity_start.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/simple_spinner_item.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/simple_spinner_item.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/spinnerdrop.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/spinnerdrop.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/layout5message.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/layout5message.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_smoking.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/activity_smoking.xml"
+    },
+    {
+        "merged": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_splash_screen.xml",
+        "source": "/home/hafeel/Android/My Projects/Medivision 06-01-2017/app/src/main/res/layout-xlarge-land/activity_splash_screen.xml"
+    }
+]

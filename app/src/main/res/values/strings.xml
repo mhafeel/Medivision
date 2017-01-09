@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Medivision Final</string>
+    <string-array name="age">
+        <item>Select</item>
+        <item>20–34</item>
+        <item>35–39</item>
+        <item>40–44</item>
+        <item>45–49</item>
+        <item>50–54</item>
+        <item>55–59</item>
+        <item>60–64</item>
+        <item>65–69</item>
+        <item>70–74</item>
+        <item>75–79</item>
+    </string-array>
+
+    <string-array name="hdlM">
+        <item>തെരഞ്ഞെടുക്കുക</item>
+        <item>60 അല്ലെങ്കിൽ ഉയർന്നത്</item>
+        <item>50-59</item>
+        <item>40-49</item>
+        <item>40 കീഴിൽ</item>
+        <item>എനിക്കറിയില്ല</item>
+    </string-array>
+    <string-array name="TotalcholesterolM">
+        <item>തെരഞ്ഞെടുക്കുക</item>
+        <item>160 കീഴിൽ</item>
+        <item>160-199</item>
+        <item>200-239</item>
+        <item>240-279 </item>
+        <item>280 അല്ലെങ്കിൽ ഉയർന്നത്</item>
+        <item>എനിക്കറിയില്ല</item>
+    </string-array>
+    <string-array name="ageM">
+        <item>തെരഞ്ഞെടുക്കുക</item>
+        <item>20-34</item>
+        <item>35-39</item>
+        <item>40-44</item>
+        <item>45-49</item>
+        <item>50-54</item>
+        <item>55-59</item>
+        <item>60-64</item>
+        <item>65-69</item>
+        <item>70-74</item>
+        <item>75-79</item>
+    </string-array>
+
+    <string-array name="bpsys">
+<item>Select</item>
+        <item>Under 120 </item>
+        <item>120–129 </item>
+        <item>130–139 </item>
+        <item>140–159 </item>
+        <item>160 or higher </item>
+
+
+
+    </string-array>
+    <string-array name="bpdio">
+        <item>Select</item>
+        <item>Under 80 </item>
+        <item>80–84</item>
+        <item>85–89</item>
+        <item>90–99</item>
+        <item>100 or higher</item>
+    </string-array>
+
+    <string-array name="Totalcholesterol">
+        <item>Select</item>
+        <item>Under 160</item>
+        <item>160–199</item>
+        <item>200–239</item>
+        <item>240–279</item>
+        <item>280 or higher</item>
+        <item>I dont know</item>
+    </string-array>
+    <string-array name="hdl">
+        <item>Select</item>
+        <item>60 or higher</item>
+        <item>50–59</item>
+        <item>40–49</item>
+        <item>Under 40</item>
+        <item>I dont know</item>
+    </string-array>
+    <string-array name="diabetes">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>I dont know</item>
+    </string-array>
+<string-array name="hba1c">
+    <item>Select</item>
+    <item>Under 7%</item>
+    <item>7–8%</item>
+    <item>8% or higher</item>
+    <item>I dont know</item>
+</string-array>
+
+    <string name="message">Since you have a history of cardiovascular/kidney disease, work with your doctor to determine your risk.
+</string>
+
+<string name="dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </string>
+
+</resources>

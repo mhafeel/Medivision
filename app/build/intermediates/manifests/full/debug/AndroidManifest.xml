@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.medivisionfinal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.app.medivision.Layout6Sync"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.Layout1AgeGender"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.Layout2CheckBox"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.Layout3Cholestrol"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.Layout5Message"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.Layout4Bmi"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.Layout7Family"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.ShareWith"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.FinalRisk"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.Diabetes"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.BloodPressure"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.SmokeActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.StartActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.app.medivision.SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

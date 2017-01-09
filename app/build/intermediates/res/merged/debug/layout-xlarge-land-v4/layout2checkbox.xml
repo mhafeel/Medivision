@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+
+        android:background="#0ab3aa" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"
+            android:id="@+id/restart"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restart"
+                android:textColor="#0ab3aa"
+                android:textSize="7pt"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/logo"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/RLChangeLang"
+            >
+
+            <TextView
+                android:id="@+id/changelangCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="50dp"
+                android:text="CHANGE LANGUAGE"
+                android:textColor="#0ab3aa" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/group"
+                android:id="@+id/imageCheckbox"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Maincheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginRight="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:layout_below="@+id/RLChangeLang"
+        android:visibility="invisible"
+
+        >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/Echeckbox"
+            android:background="@color/green" />
+
+        <LinearLayout
+            android:id="@+id/Echeckbox"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="English "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Mcheckbox"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/Echeckbox"
+            android:layout_gravity="end"
+            android:layout_marginRight="50dp"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="മലയാളം "
+                android:textSize="7pt" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+
+      >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/headerbg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Cardiac Risk Calculator"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/borderrect"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/TVPd"
+                    android:text="Do you have any  previous coronary disease ?"
+                    android:textColor="#6f6f6f"
+                    android:textSize="10pt" />
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:text="Heart attack or coronary bypass surgery?"
+                    android:textColor="#6f6f6f"
+
+                    android:textSize="9pt" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:text="Stroke or transient ischemic attack (TIA) ?"
+
+                    android:textColor="#6f6f6f"
+                    android:textSize="9pt" />
+
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+
+                    android:button="@drawable/checkbox_selector"
+                    android:text="Peripheral artery disease?"
+                    android:textColor="#6f6f6f"
+                    android:textSize="9pt" />
+
+                <CheckBox
+                    android:id="@+id/checkbox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:text="Angioplasty or stent placement?"
+                    android:textColor="#6f6f6f"
+                    android:textSize="9pt" />
+
+                <CheckBox
+                    android:id="@+id/checkbox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:text="Abdominal aortic aneurysm?"
+                    android:textColor="#6f6f6f"
+                    android:textSize="9pt" />
+
+                <CheckBox
+                    android:id="@+id/checkbox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:text="Are you a known patient of chronic kidney disease ?"
+                    android:textColor="#6f6f6f"
+                    android:textSize="9pt" />
+
+                <CheckBox
+                    android:id="@+id/checkbox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:text="None of the above"
+                    android:textColor="#6f6f6f"
+                    android:textSize="9pt" />
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+
+                android:background="#ffffff"
+                android:gravity="bottom|center"
+android:layout_gravity="center"
+                android:orientation="horizontal"
+              >
+
+                <Button
+                    android:id="@+id/button__backCB"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/borderbutton"
+                    android:text="Back"
+                    android:textColor="@color/text_color"
+                    android:textSize="10pt" />
+
+                <Button
+                    android:id="@+id/button_nextCB"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/borderrightbutton"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="10pt" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
